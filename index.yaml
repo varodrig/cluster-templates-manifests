@@ -1,0 +1,28 @@
+apiVersion: v1
+entries:
+  hypershift-kubevirt-template:
+  - annotations:
+      cluster-template: "true"
+    apiVersion: v2
+    created: "2023-05-11T12:07:11.427716805+02:00"
+    description: A Helm chart which installs Hypershift cluster using KubeVirt platform
+    digest: f9dba9ee49c541c0610561b53dedb4330eec2b9f1f8b286df61fd1d004725321
+    name: hypershift-kubevirt-template
+    type: application
+    urls:
+    - hypershift-kubevirt-template-0.0.1.tgz
+    version: 0.0.1
+  hypershift-template:
+  - annotations:
+      cluster-template: "true"
+    apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-05-11T12:07:11.427901645+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 5ec6d9847042c66663daad6e2f26d8abcf4d81e44260caf48571d1608c50b193
+    name: hypershift-template
+    type: application
+    urls:
+    - hypershift-template-0.0.1.tgz
+    version: 0.0.1
+generated: "2023-05-11T12:07:11.427414744+02:00"
