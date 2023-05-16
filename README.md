@@ -1,2 +1,2 @@
 # cluster-templates-manifests
-Contains manifests to deploy Cluster from template
+Contains manifests for deploying clusters from templates
