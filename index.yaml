@@ -1,10 +1,28 @@
 apiVersion: v1
 entries:
+  backstage:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-05-16T08:53:52.234656504+02:00"
+    dependencies:
+    - name: keycloak
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.4.1
+    - name: backstage
+      repository: https://backstage.github.io/charts
+      version: 0.20.0
+    description: Backstage
+    digest: ef6c727ac7367e2780876d8833078cbab8d4bf91586f1402f494d46fa185ffa9
+    name: backstage
+    type: application
+    urls:
+    - backstage-0.1.0.tgz
+    version: 0.1.0
   hypershift-kubevirt-template:
   - annotations:
       cluster-template: "true"
     apiVersion: v2
-    created: "2023-05-11T12:07:11.427716805+02:00"
+    created: "2023-05-16T08:53:52.235238695+02:00"
     description: A Helm chart which installs Hypershift cluster using KubeVirt platform
     digest: f9dba9ee49c541c0610561b53dedb4330eec2b9f1f8b286df61fd1d004725321
     name: hypershift-kubevirt-template
@@ -17,7 +35,7 @@ entries:
       cluster-template: "true"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-05-11T12:07:11.427901645+02:00"
+    created: "2023-05-16T08:53:52.235568627+02:00"
     description: A Helm chart for Kubernetes
     digest: 5ec6d9847042c66663daad6e2f26d8abcf4d81e44260caf48571d1608c50b193
     name: hypershift-template
@@ -25,4 +43,4 @@ entries:
     urls:
     - hypershift-template-0.0.1.tgz
     version: 0.0.1
-generated: "2023-05-11T12:07:11.427414744+02:00"
+generated: "2023-05-16T08:53:52.218383995+02:00"
