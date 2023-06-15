@@ -1,4 +1,4 @@
-apiVersion: hypershift.openshift.io/v1alpha1
+apiVersion: hypershift.openshift.io/v1beta1
 kind: NodePool
 metadata:
   name: 'np-{{ .Release.Namespace }}-{{ .Release.Name }}'
@@ -27,4 +27,4 @@ spec:
   release:
     image: >-
       quay.io/openshift-release-dev/ocp-release:{{ .Values.ocpVersion }}-{{ .Values.ocpArch }}
-  replicas: 1
+  replicas: 3

@@ -4,7 +4,7 @@ metadata:
   name: {{ .Release.Namespace }}-{{ .Release.Name }}
 spec:
   release:
-    image: quay.io/openshift-release-dev/ocp-release:{{ .Values.ocpVersion }}-{{ .Values.ocpArch }}
+    image: quay.io/openshift-release-dev/ocp-release:{{ .Values.ocpVersion }}-x86_64
   pullSecret:
     name: pullsecret-cluster
   sshKey:
@@ -14,15 +14,20 @@ spec:
       - cidr: 10.132.0.0/14
     machineNetwork:
       - cidr: 192.168.122.0/24
+    networkType: OVNKubernetes
     serviceNetwork:
       - cidr: 172.31.0.0/16
-    networkType: OVNKubernetes
   platform:
-    type: KubeVirt
-  infraID: {{ .Release.Namespace }}-{{ .Release.Name }}
+    type: Agent
+    agent:
+      agentNamespace: {{ .Values.agentNamespace }}
+  infraID: {{ .Release.Name }}
   dns:
     baseDomain: {{ .Values.baseDnsDomain }}
   services:
+  - service: APIServer
+    servicePublishingStrategy:
+      type: LoadBalancer
   - service: APIServer
     servicePublishingStrategy:
       type: {{ .Values.APIPublishingStrategy }}
