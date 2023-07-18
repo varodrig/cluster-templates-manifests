@@ -4,7 +4,8 @@
   "required": [
     "ocpVersion",
     "agentNamespace",
-    "baseDnsDomain"
+    "baseDnsDomain",
+    "APIPublishingStrategy"
   ],
   "properties": {
     "ocpVersion": {
@@ -14,6 +15,12 @@
       "type": "string"
     },
     "baseDnsDomain": {
+      "type": "string"
+    },
+    "APIPublishingStrategy": {
+      "type": "string"
+    },
+    "NodePortAddress": {
       "type": "string"
     }
   }

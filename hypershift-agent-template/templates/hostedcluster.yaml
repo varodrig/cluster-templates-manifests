@@ -24,10 +24,7 @@ spec:
   infraID: {{ .Release.Name }}
   dns:
     baseDomain: {{ .Values.baseDnsDomain }}
-  services:
-  - service: APIServer
-    servicePublishingStrategy:
-      type: LoadBalancer
+  services:  
   - service: APIServer
     servicePublishingStrategy:
       type: {{ .Values.APIPublishingStrategy }}
