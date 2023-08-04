@@ -1,9 +1,20 @@
 apiVersion: v1
 entries:
+  custom-cluster-templates:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-08-04T10:19:25.255852-04:00"
+    description: A Helm chart for Kubernetes
+    digest: 1e7c8d7b31bb7bb7b4f872ea5bfd82b0f580c2b83269dd9c1a1fb285a37bea3f
+    name: custom-cluster-templates
+    type: application
+    urls:
+    - https://varodrig.github.io/cluster-templates-manifests/custom-cluster-templates-0.1.0.tgz
+    version: 0.1.0
   hypershift-agent-template:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-27T10:32:52.344658-04:00"
+    created: "2023-08-04T10:19:25.256759-04:00"
     description: Hypershift cluster template with agent workers
     digest: 6c102d58ca9a76c17681eb260e71be3e699801f292501d225261356cb3d6f8de
     name: hypershift-agent-template
@@ -15,7 +26,7 @@ entries:
   - annotations:
       cluster-template: "true"
     apiVersion: v2
-    created: "2023-07-27T10:32:52.345865-04:00"
+    created: "2023-08-04T10:19:25.258616-04:00"
     description: A Helm chart which installs Hypershift cluster using KubeVirt platform
     digest: 2b5d44df585930cc6b4c4129937b0434e8ebc957d08f6d084ae8d501f1dcabcb
     name: hypershift-kubevirt-template
@@ -26,7 +37,7 @@ entries:
   - annotations:
       cluster-template: "true"
     apiVersion: v2
-    created: "2023-07-27T10:32:52.345256-04:00"
+    created: "2023-08-04T10:19:25.257776-04:00"
     description: A Helm chart which installs Hypershift cluster using KubeVirt platform
     digest: f9dba9ee49c541c0610561b53dedb4330eec2b9f1f8b286df61fd1d004725321
     name: hypershift-kubevirt-template
@@ -39,7 +50,7 @@ entries:
       cluster-template: "true"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-07-27T10:32:52.346696-04:00"
+    created: "2023-08-04T10:19:25.261001-04:00"
     description: A Helm chart for Kubernetes
     digest: 0ed6be0fd8c1586060aa2bee1d7c6381f155f014bfced1d4599d1de08081d592
     name: hypershift-template
@@ -51,7 +62,7 @@ entries:
       cluster-template: "true"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-07-27T10:32:52.346264-04:00"
+    created: "2023-08-04T10:19:25.2594-04:00"
     description: A Helm chart for Kubernetes
     digest: 5ec6d9847042c66663daad6e2f26d8abcf4d81e44260caf48571d1608c50b193
     name: hypershift-template
@@ -64,7 +75,7 @@ entries:
       cluster-template: "true"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-07-27T10:32:52.347285-04:00"
+    created: "2023-08-04T10:19:25.262109-04:00"
     description: A Helm chart for Kubernetes
     digest: 4700207c496a36bcb838c11951797a2196ae242bc35608c6753148aad399cf36
     name: hypershift-template-new
@@ -72,4 +83,4 @@ entries:
     urls:
     - https://varodrig.github.io/cluster-templates-manifests/hypershift-template-new-0.0.2.tgz
     version: 0.0.2
-generated: "2023-07-27T10:32:52.343508-04:00"
+generated: "2023-08-04T10:19:25.254975-04:00"
